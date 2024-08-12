@@ -17,6 +17,7 @@ public void launch()
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	driver.get("https://www.bajajauto.com/");
 	Reporter.log("Bajaj launched successfully");
+	driver.manage().window().minimize();
 }
 
 
